@@ -1,0 +1,26 @@
+{
+  "name": "wim/yii2-oss",
+  "description": "Yii 2 Oss extension",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii",
+    "oss",
+    "yii2-oss"
+  ],
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": ">=5.3",
+    "aliyuncs/oss-sdk-php": "~2.0"
+  },
+  "authors": [
+    {
+      "name": "wim",
+      "email": "1404397383@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "wim\\yii\\oss\\": "src"
+    }
+  }
+}
