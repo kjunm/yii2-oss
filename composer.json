@@ -9,8 +9,7 @@
   ],
   "license": "BSD-3-Clause",
   "require": {
-    "php": ">=5.3",
-    "aliyuncs/oss-sdk-php": "~2.0"
+    "php": ">=5.3"
   },
   "authors": [
     {
