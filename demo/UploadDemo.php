@@ -18,9 +18,9 @@ class UploadDemo
     {
         $oss = \Yii::createObject([
             'class' => WimOss::class,
-            'accessKeyId' => 'LTAIsUqClBMCH14a',
-            'accessKeySecret' => 'L4XCNmgyv8zdizT1ZfKpKcvPiSQtAU',
-            'endpoint' => 'oss-cn-shenzhen.aliyuncs.com'
+            'accessKeyId' => '',
+            'accessKeySecret' => '',
+            'endpoint' => ''
         ]);
         $response = $oss->upload($object,$filePath);
         return $response;
