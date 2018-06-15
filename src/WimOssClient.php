@@ -11,9 +11,9 @@ use OSS\OssClient;
 
 class WimOssClient extends OssClient
 {
-    public function upload()
+    public function upload($bucket,$object, $filePath)
     {
-        
+        return $this->uploadFile($bucket, $object, $filePath);
     }
 
 

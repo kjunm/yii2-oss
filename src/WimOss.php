@@ -10,21 +10,22 @@ namespace wim\yii\oss;
 class WimOss extends BaseOss
 {
     /**
-     * init
+     * @return OssClient
      */
-    public function init()
+    public function getClient()
     {
-        parent::init();
-        $this->_ossClient = $this->setClient(new WimOssClient($this->accessKeyId,$this->accessKeySecret,$this->endpoint));
+        if ($this->_ossClient === null) {
+            $this->setClient(new WimOssClient($this->accessKeyId,$this->accessKeySecret,$this->endpoint));
+        }
+        return $this->_ossClient;
     }
-
     /**
      * @param $object
      * @param $filepath
      */
     public function upload($object, $filePath)
     {
-        return $this->getClient()->uploadFile($this->bucket, $object, $filePath);
+        return $this->getClient()->upload($this->bucket, $object, $filePath);
     }
 
 }

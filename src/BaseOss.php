@@ -48,20 +48,17 @@ abstract class BaseOss extends Component
             throw new InvalidConfigException('The "endpoint" property must be set.');
         }
     }
-    /**
-     * @return OssClient
-     */
-    public function getClient()
-    {
-        return $this->_ossClient;
-    }
+
     /**
      * @param  $ossClient
      */
      public function setClient(OssClient $ossClient){
          $this->_ossClient = $ossClient;
      }
-
+    /**
+     * @return OssClient
+     */
+    abstract public function getClient();
     /**
      * upload
      */
