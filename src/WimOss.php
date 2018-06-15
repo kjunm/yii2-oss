@@ -7,8 +7,6 @@
  */
 namespace wim\yii\oss;
 
-use OSS\OssClient;
-
 class WimOss extends BaseOss
 {
     /**

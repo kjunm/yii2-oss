@@ -11,9 +11,9 @@ use OSS\OssClient;
 
 class WimOssClient extends OssClient
 {
-    public function __construct($accessKeyId, $accessKeySecret, $endpoint, $isCName = false, $securityToken = NULL, $requestProxy = NULL)
+    public function upload()
     {
-        parent::__construct($accessKeyId, $accessKeySecret, $endpoint, $isCName, $securityToken, $requestProxy);
+        
     }
 
 
